@@ -1,0 +1,129 @@
+@import './styles.css';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--dark-blue));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em var(--primary-red));
+}
+
+.card {
+  background-color: var(--light-gray);
+  color: var(--dark-blue);
+}
+
+/* login part */
+/* Reset stuff if needed */
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C20114;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  transition: background 0.3s;
+}
+
+.login-btn {
+  background-color: #053C5E;
+  border-radius: 4px;
+}
+
+/* Login form styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+
+.login-form input {
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.login-form button {
+  padding: 0.7rem;
+  background-color: #C20114;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #A31621;
+}

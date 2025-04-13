@@ -1,0 +1,134 @@
+.contact-faq-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #E7E7E7;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Contact part */
+.contact-card {
+  background-color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-card h2 {
+  color: #053C5E;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  border-color: #053C5E;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(5, 60, 94, 0.1);
+}
+
+.contact-card button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #A31621;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-card button:hover {
+  background-color: #C20114;
+}
+
+/* FAQ part */
+.faq-cloud {
+  background-color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 50px / 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  flex: 1;
+  position: relative;
+  min-width: 280px;
+}
+
+.faq-cloud::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.faq-cloud h2 {
+  color: #053C5E;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+/* FAQ  */
+.faq-item {
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.faq-item:hover {
+  background-color: #eaeaea;
+}
+
+.faq-item .question {
+  font-weight: bold;
+  color: #A31621;
+  font-size: 1.1rem;
+}
+
+.faq-item .answer {
+  margin-top: 0.5rem;
+  color: #6D7275;
+  display: none;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.faq-item.open .answer {
+  display: block;
+}
+
+/* mobile interface just in case */
+@media (max-width: 768px) {
+  .contact-faq-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

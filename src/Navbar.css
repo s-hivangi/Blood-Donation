@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+:root{
+    --main-bg-color:#E7E7E7;
+    --shade1red:#A31621;
+    --shade2red:#C20114;
+    --blue:#053C5E;
+    --darkgrey:#6D7275;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px;
+    padding-bottom: 0px;
+    background-color:var(--shade2red);
+    height:47px;
+}
+
+.LogoName{
+    font-family:'Noto Serif';
+    font-weight: bolder;
+    color:var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    gap:0px;
+    padding:0px;
+    font-size:22px;
+}
+.LogoName img{
+    height:40px;
+    
+}
+
+.nav-items ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:32px;
+    padding-right: 10px;
+
+}
+
+.nav-items ul li a{
+    font-family: 'Poppins';
+    font-weight: 400;
+    color:var(--main-bg-color);
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.active-link{
+    background-color: var(--blue);
+    padding:4.5px;
+    border-radius: 7px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C20114;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
